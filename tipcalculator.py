@@ -24,7 +24,7 @@ split = str(input("Do you want to split the tip? Y/N\n"))
 #or to return the total tip value again.
 if (split == "Y" or split == "y"):
     splitnumber = int(input("Between how many people do you want to split the tip?\n"))
-    pptip= subtotal_tip/float(splitnumber)
+    pptip= float(subtotal_tip)/float(splitnumber)
     print("The per person tip is: " + "$" + str(round(pptip, 2)))
 else:
     print("The total tip is: " + "$" + ("{:.2f}".format(subtotal_tip)))
